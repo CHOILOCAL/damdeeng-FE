@@ -9,14 +9,16 @@ import Products from './view/Products'
 import MakeTogether from './view/MakeTogether'
 import QnA from './view/QnA'
 import Users from "./Users";
-
+import { UsersProvider } from './UsersContext'
 
 function App() {
   return (
     <div>
       <Header />
       {/* switch를 통한 Router */}
+      <UsersProvider>
       <Users />
+      </UsersProvider>
 
       <Switch>
                 <Route path="/" component={Home} exact={true}/>
