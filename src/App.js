@@ -8,6 +8,7 @@ import Custom from './view/Custom'
 import Products from './view/Products'
 import MakeTogether from './view/MakeTogether'
 import QnA from './view/QnA'
+import Users from "./Users";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <div>
       <Header />
       {/* switch를 통한 Router */}
+      <Users />
 
       <Switch>
                 <Route path="/" component={Home} exact={true}/>
