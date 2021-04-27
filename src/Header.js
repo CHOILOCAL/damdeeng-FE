@@ -1,6 +1,6 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
-import {Nav, FormControl, Form} from 'react-bootstrap';
+import {Nav, Form} from 'react-bootstrap';
 
 
 function Header() {
@@ -30,9 +30,14 @@ function Header() {
       {/* <FormControl type="text" placeholder="검색어를 입력해주세요. " className="mr-sm-2" /> */}
       <button type="button" class="btn btn-outline-secondary">로그인</button>
       <button type="button" class="btn btn-outline-secondary">회원가입</button>
+      <button className="btn btn-lg btn-primary btn-block">
+        <i className="fa fa-facebook" aria-hidden="true"></i>
+      </button>
     </Form>
 
   </Nav>
+
+
 </>
     );
   }
